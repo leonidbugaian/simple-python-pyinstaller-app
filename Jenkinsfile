@@ -33,7 +33,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'pythoninstaller --onefile sources/add2vals.py'
+                sh 'pyinstaller --onefile sources/add2vals.py'
             }
             post {
                 success {
